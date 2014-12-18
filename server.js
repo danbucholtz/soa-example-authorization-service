@@ -6,6 +6,6 @@ var permissionsController = require('./controllers/PermissionsController');
 
 mongoose.connect(config.mongoUri);
 
-var app = service.createApiServer(config.userServicePort);
+var app = service.createApiServer(config.authorizationServicePort);
 
 app.get('/permissions', service.ensureAuthenticated, permissionsController.getPermissions);
