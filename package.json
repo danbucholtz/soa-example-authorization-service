@@ -14,9 +14,11 @@
         "node-uuid" : "1.4.1",
         "passport": "*",
         "passport-local": "*",
+        "passport-http-bearer": "*",
 		"q" : "1.0.1",
 		"soa-example-core-service": "git://github.com/danbucholtz/soa-example-core-service",
     	"soa-example-service-config": "git://github.com/danbucholtz/soa-example-service-config",
-    	"soa-example-core-utils": "git://github.com/danbucholtz/soa-example-core-utils"
+    	"soa-example-core-utils": "git://github.com/danbucholtz/soa-example-core-utils",
+    	"soa-example-user-service-api": "git://github.com/danbucholtz/soa-example-user-service-api"
     }
 }
