@@ -1,4 +1,8 @@
+var loggerServiceApi = require('soa-example-logging-service-api');
+
 var getPermissions = function(req, res){
+
+	loggerServiceApi.debug(req.user.accessToken, "User [" + req.user.emailAddress + "] loading permissions ...");
 
 	var permissionsObject = {
 		applications: [
@@ -27,6 +31,8 @@ var getPermissions = function(req, res){
 			}
 		]
 	};
+
+	loggerServiceApi.debug(req.user.accessToken, "User [" + req.user.emailAddress + "] loading permissions ... Success");
 
 	res.send(permissionsObject);
 	
